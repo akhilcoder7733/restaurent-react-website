@@ -47,7 +47,7 @@ const About = () => {
             textAlign: "center",
           }}
         >
-          This is a Demo Page.. By <b>Akhil John.</b><br />
+          Hi,This is a Demo Page.. By <b>Akhil John.</b><br />
           Welcome to our restaurent, Homely food, Happy food.
         </Typography>
       </CustomBox>
