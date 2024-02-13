@@ -1,0 +1,41 @@
+/* OrderPage.css */
+
+.custom-font {
+  font-family: 'CustomFont', sans-serif; /* Use the font-family you defined and fallback to sans-serif */
+  /* Add any other styling you want to apply */
+}
+
+.order-container {
+  padding: 20px;
+}
+
+.order-heading {
+  font-size: 24px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.order-details-form {
+  margin-top: 20px;
+}
+
+.order-form-item {
+  margin-bottom: 15px;
+}
+
+/* Styles for the "Confirm Order" button */
+.confirm-button {
+  background-color: #20c436;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 20px; /* Adjusted padding */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 20px; /* Add margin to create a gap */
+}
+
+.confirm-button:hover {
+  background-color: #0e1a40;
+  color: white;
+}

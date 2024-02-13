@@ -1,9 +1,33 @@
 import React from 'react'
-import { Box, Container, styled, Typography } from '@mui/material'
+import './Dishes.css';
+import { Box,
+        Container,
+        styled,
+        Typography,
+        
+        } from '@mui/material';
 import { Data } from "../../StaticData/Data"
+import './Dishes.css';
 import CustomCard from '../../Components/CustomCard/CustomCard'
+import DishesCartPopup from './DishesCartPopup';
+import { useState } from 'react';
+
+
 
 const Dishes = () => {
+    const [cartPopupOpen, setCartPopupOpen] = useState(false);
+    const [selectedDish, setSelectedDish] = useState(null);
+
+    const handleOpenCartPopup = (dish) => {
+        setSelectedDish(dish);
+        setCartPopupOpen(true);
+    };
+
+    const handleCloseCartPopup = () => {
+        setCartPopupOpen(false);
+        setSelectedDish(null);
+    };
+
     const DishesBox = styled(Box)(({ theme }) =>({
         display:"flex",
         justifyContent:"space-between",
@@ -20,8 +44,32 @@ const Dishes = () => {
         },
     }));
 
+    const CustomButton = styled("button")(({ theme }) => ({
+        backgroundColor: "#0F1B4C",
+        color: "#ffffff",
+        fontWeight: "700",
+        fontSize: "14px",
+        cursor: "pointer",
+        padding: "0.7rem 2rem",
+        borderRadius: "7px",
+        textTransform: "none",
+        display: "block",
+        marginTop: "10px",
+        marginLeft:"120px",
+        border: "2px solid transparent",
+        transition: "background-color 0.3s, color 0.3s, borderColor 0.3s",
+        "&:hover": {
+          backgroundColor: "white",
+          color: "black",
+          borderColor: "#0F1B4C",
+          animation: `${theme.transitions.create(["background-color", "color", "border-color"], {
+            duration: theme.transitions.duration.short,
+          })} custom-hover-animation`,
+        },
+      }));
+
   return (
-    <Box sx={{ mt: 5, backgroundColor:"<#F5FAFE", py:10 }}>
+    <Box sx={{ mt: 0, backgroundColor:"#F5FAFE", py:10 }}>
     <Container>
     <PropertiesTextBox>
     <Typography
@@ -30,27 +78,41 @@ const Dishes = () => {
     </Typography>
     <Typography
     sx={{ color:'#5A6473', fontSize:"16px",mt:1, ml:"13px"}}>
-    Explore variety of South Indiam Dishes..!!
+    Explore variety of South Indian Dishes..!!
     </Typography>
     </PropertiesTextBox>
 
     <DishesBox>
     {Data.map((foodItem) => (
-        <CustomCard
-        key={foodItem.id}
-        img={foodItem.img}
-        price={foodItem.price}
-        items={foodItem.item}
-        likes={foodItem.likes}
-        heart={foodItem.heart}
-        share={foodItem.share}
-        />
+        <div key={foodItem.id}>
+            <CustomCard
+              img={foodItem.img}
+              name={foodItem.name}
+              price={foodItem.price}
+              items={foodItem.item}
+              likes={foodItem.likes}
+              heart={foodItem.heart}
+              share={foodItem.share}
+              />
+              
+              <CustomButton
+              className='order-now-button'
+              onClick={() => handleOpenCartPopup(foodItem)}
+            >
+              Order Now
+            </CustomButton>
+        </div>
+
     ))}
     </DishesBox> 
-
+    <DishesCartPopup
+    open={cartPopupOpen}
+    handleClose={handleCloseCartPopup}
+    selectedDish={selectedDish}
+/>
     </Container>
     </Box>
   )
 }
 
-export default Dishes
+export default Dishes;

@@ -8,6 +8,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
 import CustomButten from '../../Components/CustomButton/CustomButton'
 
 
+
 const Booking = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
     width: "30%",
@@ -62,6 +63,7 @@ const Booking = () => {
     <CustomBox>
     <Typography variant='body2'
     sx={{
+
       fontSize:"16px",
       fontWeight:"500",
       color:"#5A6473",

@@ -1,0 +1,14 @@
+/* Header.css */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: auto;
+    background-color: #FED801;
+    margin-left: 0;
+    margin-bottom: -24px;
+  }
+  
+  /* Add more styles for other elements as needed */
+  

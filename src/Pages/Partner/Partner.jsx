@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Container, Typography } from '@mui/material'
 import { styled } from '@mui/system'
-import logoImg from '../../assets/logo.png'
+import logoImg from '../../assets/Akhil.png'
 import starsImg from '../../assets/Star.png'
 import logosImg from '../../assets/logos.png'
 
@@ -21,33 +21,40 @@ const Partner = () => {
             marginBottom: theme.spacing(4),
         },
     }));
+    
   return (
     <Box sx={{ mt: 10}}>
     <CustomContainer>
     <CustomBox>
-    <img src={logoImg} alt="" style={{maxwidth: "100%"}} />
-    <Typography varient="body2"
-    sx={{
+    <img src={logoImg} alt="" style={{ maxWidth: "45%", paddingBottom:"0px" }} />
+    <Typography
+      variant="body2"
+      sx={{
         fontSize: "16px",
-      color: "#7D8589",
-      fontWeight: "bold",
-      mt: 2,
-    }}>
-    More than 45,000 trust Tech
+        color: "#7D8589",
+        fontWeight: "bold",
+        mt: 2,
+      }}
+    >
+      More than 2,000 trust us.
     </Typography>
-    </CustomBox>
-    <Box>
-    <img src={starsImg} alt="" style={{ maxwidth:"100%"}}/>
-    <Typography varient="body2"
-    sx={{
+  </CustomBox>
+  <Box>
+    <img src={starsImg} alt="" style={{ maxWidth: "100%", paddingTop:"30px", }} />
+    <Typography
+      variant="body2"
+      sx={{
         fontSize: "16px",
-      color: "#7D8589",
-      fontWeight: "bold",
-      mt: 2,
-    }}>
-    5-star Rating (2k+ Reviews)
+        color: "#7D8589",
+        fontWeight: "bold",
+        paddingTop:"0px",
+        mt: 2,
+      }}
+    >
+      5-star Rating (2k+ Reviews)
     </Typography>
-    </Box>
+  </Box>
+  
     </CustomContainer>
 
     <Container sx={{display:"flex", flexDirection:"column"}}>

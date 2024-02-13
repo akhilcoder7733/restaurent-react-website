@@ -1,0 +1,78 @@
+/* RegisterFormPopup.css */
+.register-popup {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially off-screen */
+    bottom: 0;
+    width: 400px; /* Adjust as needed */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: right 0.5s ease-in-out; /* Transition for sliding effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .popup-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .register-popup.open {
+    right: 0; /* Slide in from the right when open */
+  }
+  
+  .register-popup form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .register-popup form .MuiTextField-root {
+    margin-bottom: 10px; /* Increase the margin if needed */
+    width: 100%; /* Adjust as needed */
+    max-width: 350px; /* Set a maximum width if needed */
+  }
+  
+  .register-popup form a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .register-popup form a:hover {
+    text-decoration: underline;
+  }
+  .register-popup form a:hover {
+    text-decoration: underline;
+  }
+  
+  .register-popup form button {
+    width: 100%;
+    max-width: 350px; /* Set a maximum width if needed */
+  }
+  
+  .para-log {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+  }
+  
+  .para-log a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .para-log a:hover {
+    text-decoration: underline;
+  }
+  
+  .MuiDialog-root {
+    background-color: transparent;
+  }

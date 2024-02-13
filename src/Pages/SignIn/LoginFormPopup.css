@@ -1,0 +1,68 @@
+/* LoginFormPopup.css */
+.login-popup {
+  position: fixed;
+    top: 0;
+    right: -100%; /* Initially off-screen */
+    bottom: 0;
+    width: 400px; /* Adjust as needed */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: right 0.5s ease-in-out; /* Transition for sliding effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-popup.open {
+  right: 0; /* Slide in from the right when open */
+}
+
+.login-popup form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Adjust the width of the input fields here */
+.login-popup form .MuiTextField-root {
+  margin-bottom: 5px;
+  width: 100%; /* Adjust as needed */
+}
+
+.login-popup form a {
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-popup form a:hover {
+  text-decoration: underline;
+}
+.para-log {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}
+.login-popup form button {
+  width: 100%;
+}
+.para-log a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.para-log a:hover {
+  text-decoration: underline;
+}
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #888;
+}

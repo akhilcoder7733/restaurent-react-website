@@ -1,0 +1,19 @@
+.dishes-container .order-now-button {
+  background-color: #2062c4;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: none;
+  margin-top: 10px; /* Add margin to adjust the position */
+}
+
+.order-now-button:hover {
+  background-color: #ffffff;
+  color: #091e3d; /* Change text color on hover */
+}
+

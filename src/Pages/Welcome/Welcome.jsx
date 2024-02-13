@@ -4,30 +4,41 @@ import { styled } from "@mui/system";
 import { Container } from '@mui/system';
 import CustomButton from "../../Components/CustomButton/CustomButton";
 import WelcomeImage from '../../assets/welcome.png';
+import { useNavigate } from "react-router-dom";
 
-const CustomBox = styled(Box)(({ theme }) => ({
-    display:"flex", 
-    justifyContent:"center",
-    gap: theme.spacing(5),
-    marginTop: theme.spacing(3),
-    [theme.breakpoints.down("md")]: {
-        flexDirection:"column",
-        alignItems: "center",
-        textAlign:"center"
-    },
-}));
-
-const CustomTitle = styled(Typography)(({ theme }) => ({
-    fontSize:"64px",
-    color: "#fff",
-    fontWeight:"bold",
-    margin:theme.spacing(4, 0, 4, 0),
-    [theme.breakpoints.down("sm")]:{
-        fontSize: "40px",
-    },
-}));
 
 const Welcome = () => {
+    const navigate = useNavigate();
+
+    const CustomBox = styled(Box)(({ theme }) => ({
+        display:"flex", 
+        justifyContent:"center",
+        gap: theme.spacing(5),
+        marginTop: theme.spacing(3),
+        [theme.breakpoints.down("md")]: {
+            flexDirection:"column",
+            alignItems: "center",
+            textAlign:"center"
+        },
+    }));
+    
+    const CustomTitle = styled(Typography)(({ theme }) => ({
+        fontSize:"64px",
+        color: "#fff",
+        fontWeight:"bold",
+        margin:theme.spacing(4, 0, 4, 0),
+        [theme.breakpoints.down("sm")]:{
+            fontSize: "40px",
+        },
+    }));
+    
+    
+    
+
+    const handleAboutUsClick = () => {
+        // Handle the "Order now" button click
+        navigate("/about"); // Navigate to the "Dishes" page
+      };
     return (
         <Box sx={{ backgroundColor: "#FED801", minHeight:"89vh"}}>
             <Container>
@@ -43,7 +54,7 @@ const Welcome = () => {
                                 mb:4,
                             }}
                         >
-                            Welcome to Techflix Restaurent
+                            Welcome to Akhil's Restaurent
                         </Typography>
                         <CustomTitle variant="h1">
                             Discover a place you'll love to eat.
@@ -56,6 +67,7 @@ const Welcome = () => {
                             color="#fff"
                             buttonText="More about Us"
                             welcomeBtn={true}
+                            onClick={handleAboutUsClick}
                         />
                     </Box>
                     <Box sx={{flex: "1.25"}}>

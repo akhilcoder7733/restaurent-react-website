@@ -6,6 +6,7 @@ import shareIcon from '../../assets/share.png'
 
 const CustomCard = ({ 
     img,
+    name,
     price,
     item,
     likes,
@@ -46,10 +47,13 @@ const CustomCard = ({
 
     <Box sx={{ padding:"1rem"}}>
     <Typography varient="body2" sx={{ fontWeight:"700" }}>
-    ${price}
+    {price}/-
     </Typography>
     <Typography varient="body2" sx={{ my: 2 }}>
     {item}
+    </Typography>
+    <Typography variant="body2" sx={{ color: "black" }}>
+    {name}
     </Typography>
     <Box sx={{
         display:"flex",
@@ -77,6 +81,7 @@ const CustomCard = ({
     {share}
     </Typography>
     </InfoBox>
+    
     </Box>
     
     </Box>

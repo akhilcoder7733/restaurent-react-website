@@ -74,7 +74,7 @@ const Ambience = () => {
                 my: 3,
               }}
             >
-              You have founde a ambience you love.
+              You have found an ambience you love.
             </Typography>
 
             <Typography
@@ -120,7 +120,7 @@ const Ambience = () => {
               alignItems: "center",
             }}
           >
-            <LargeText>450+</LargeText>
+            <LargeText>200+</LargeText>
             <SmallText>Dliver per day</SmallText>
           </Box>
         </TextFlexbox>
