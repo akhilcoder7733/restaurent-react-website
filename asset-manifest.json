@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/restaurent-react-website/static/css/main.1617fdc2.css",
+    "main.js": "/restaurent-react-website/static/js/main.51e73bec.js",
+    "static/js/651.fec21160.chunk.js": "/restaurent-react-website/static/js/651.fec21160.chunk.js",
+    "static/media/Dosa.jpg": "/restaurent-react-website/static/media/Dosa.b59f87cbf87a993c7a5d.jpg",
+    "static/media/welcome.png": "/restaurent-react-website/static/media/welcome.723e52d36732126fa795.png",
+    "static/media/ambience.jpg": "/restaurent-react-website/static/media/ambience.8b318e0aa2b30e0a977d.jpg",
+    "static/media/Biriyani.jpg": "/restaurent-react-website/static/media/Biriyani.e32babd894a54c1cd4c9.jpg",
+    "static/media/tic.png": "/restaurent-react-website/static/media/tic.3247358143940f59f8c5.png",
+    "static/media/logos.png": "/restaurent-react-website/static/media/logos.1316ef50d84b10ee5041.png",
+    "static/media/mandi.jpg": "/restaurent-react-website/static/media/mandi.79ec4029e3c45331fbfd.jpg",
+    "static/media/DeliveryImg.png": "/restaurent-react-website/static/media/DeliveryImg.0fbebbdbfc53d67bdd8f.png",
+    "static/media/Akhil.png": "/restaurent-react-website/static/media/Akhil.46ae54e7fa87ddd56744.png",
+    "index.html": "/restaurent-react-website/index.html",
+    "main.1617fdc2.css.map": "/restaurent-react-website/static/css/main.1617fdc2.css.map",
+    "main.51e73bec.js.map": "/restaurent-react-website/static/js/main.51e73bec.js.map",
+    "651.fec21160.chunk.js.map": "/restaurent-react-website/static/js/651.fec21160.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1617fdc2.css",
+    "static/js/main.51e73bec.js"
+  ]
+}
